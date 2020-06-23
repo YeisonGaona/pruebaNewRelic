@@ -1,0 +1,29 @@
+.contenedor {
+    position: relative;
+    z-index: 1;
+    width: 394px;
+    height: 83px;
+    margin: 50px auto;
+    border: 2px solid rgb(199, 189, 189);
+    border-radius: 21px;
+    box-shadow: 10px 10px 76px -34px rgba(0, 0, 0, 0.75);
+}
+
+.parte-superior {
+    border-radius: 90px 92px 0 0;
+    height: 20px;
+    width: 394px;
+    box-shadow: 10px 56px 76px -53px rgba(0, 0, 0, 0.75);
+}
+
+.txt-field {
+    height: 20px;
+    width: 180px;
+    font-size: 15px;
+    border: 2px solid rgb(199, 189, 189);
+    padding: 20px;
+    font-style: italic;
+    left: 5%;
+    position: absolute;
+    border-radius: 9px;
+}

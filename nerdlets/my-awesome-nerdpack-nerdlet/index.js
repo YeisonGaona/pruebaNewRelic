@@ -1,6 +1,6 @@
 import React from 'react';
 
-// https://docs.newrelic.com/docs/new-relic-programmable-platform-introduction
+import './styles.scss';
 
 export default class MyAwesomeNerdpackNerdletNerdlet extends React.Component {
     constructor() {
@@ -43,34 +43,27 @@ export default class MyAwesomeNerdpackNerdletNerdlet extends React.Component {
     render() {
         return (
             <div style={{ paddingRight: '70%' }}>
-                <div style={{
-                    position: 'relative',
-                    zIndex: '1',
-                    width: '394px',
-                    height: '83px',
-                    margin: '50px auto',
-                    border: '2px solid rgb(199,189,189)',
-                    borderRadius: '21px',
-                    boxShadow: '10px 10px 76px -34px rgba(0,0,0,0.75)'
-                }}>
-                    <div style={{
-                        borderRadius: '90px 92px 0 0',
-                        height: '20px',
-                        width: '394px',
-                        background: this.state.estado,
-                        boxShadow: '10px 56px 76px -53px rgba(0,0,0,0.75)'
-                    }}>
+                <div className='contenedor'>
+                    <div className='parte-superior' style={{ background: this.state.estado }}>
                         <br />
                         <br />
-                        <input placeholder='Message to Update' style={{
-                            height: '20px',width:'180px', fontSize: '15px', border: '2px solid rgb(199, 189, 189)', padding: '20px', fontStyle: 'italic',
-                            left: '5%', position: 'absolute',
-                            borderRadius: '9px'
-                        }}></input>
+                        <input placeholder='Message to Update' style={txtfield} ></input>
                     </div>
                 </div >
             </div>
 
         );
     }
+}
+
+const txtfield = {
+    height: '20px',
+     width: '180px',
+    fontSize: '15px',
+    border: '2px solid rgb(199, 189, 189)',
+    padding: '20px',
+    fontStyle: 'italic',
+    left: '5%',
+    position: 'absolute',
+    borderRadius: '9px'
 }
